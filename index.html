@@ -5,11 +5,11 @@
     <title>My Personal Page</title>
     <style>
         .container {
-            display: flex; /* 使用flex布局 */
-            align-items: center; /* 垂直居中对齐 */
+          display: flex;
+          align-items: flex-start; /* 图片和段落的顶部对齐 */
         }
-        .container img {
-            margin-right: 20px; /* 与文字间距 */
+        .contact-info {
+          margin-left: 20px; /* 调整联系信息与图片之间的间距 */
         }
     </style>
   </head>
@@ -20,11 +20,9 @@
     <div class="container">
       <img src="zzn.jpg" alt="Example Image" width="288" height="384">
       <p>I'm a junior student in Shanghai Jiao Tong University (sjtu), majoring in Electrical Engineering and Automation. My research focus is machine learning in power system, integration 
-        of electric vehicles and blablabla
-        
-      </p>
+        of electric vehicles and blablabla.</p>
     </div>
-    <div>
+    <div class="contact-info">
           <h3>contact</h3>
           <ul> 
             <li>Telephone: (+86) 159-0680-5928</li>
