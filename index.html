@@ -4,16 +4,16 @@
   <title>My Personal Page</title>
   <style>
     .container {
-      overflow: auto; /* Clear floats */
+      display: flex; /* Use flexbox for layout */
+      align-items: flex-start; /* Align items at the start of the cross axis */
     }
 
     .container img {
-      float: left; /* Image left float */
       margin-right: 20px; /* Adjust spacing between image and paragraph */
     }
 
     .contact-info {
-      float: right; /* Contact info right float */
+      margin-left: auto; /* Move contact info to the right */
     }
   </style>
 </head>
