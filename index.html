@@ -7,6 +7,8 @@
     .container {
       display: flex;
       align-items: flex-start;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     .container img {
@@ -14,21 +16,26 @@
     }
 
     .contact-info {
-      flex: 1;
+      flex: 1; /* Allow the contact info to grow and take up remaining space */
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     /* Style for the contact information */
     .contact-info h3 {
-      margin-top: 0;
-      margin-bottom: 0;
+      margin-top: 0; /* Remove margin from the top of the heading */
+      margin-bottom: 0px; /* Add a small bottom margin to reduce the distance */
     }
 
     ul {
       list-style-type: square;
       font-size: 16px;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-left: 0;
+    }
+
+    .contact-info ul {
+      list-style-type: none; /* Remove default list styles */
+      padding-left: 0; /* Remove default left padding */
+      margin-top: 0; /* Remove top margin */
     }
 
     body {
@@ -36,14 +43,12 @@
     }
     
     p {
-      font-size: 18px;
-      margin-top: 0;
-      margin-bottom: 1em;
+      font-size: 18px; /* Sets the font size of <p> elements to 18 pixels */
     }
 
     hr {
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
+      margin-top: 0em; /* Adjust the top margin */
+      margin-bottom: 0em; /* Adjust the bottom margin */
     }
 
   </style>
@@ -109,6 +114,5 @@
     </li>
   </ul>
 
-</body>
+  </body>
 </html>
-
